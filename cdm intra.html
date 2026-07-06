@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MY NATIVE - Chidambaram</title>
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <style>
+        /* Smooth transitions for theme switching */
+        body {
+            transition: background-color 0.3s, color 0.3s;
+        }
+    </style>
+</head>
+<body class="bg-amber-50 text-stone-800 font-sans dark:bg-stone-950 dark:text-stone-100">
+
+    <header class="bg-gradient-to-r flow-root from-amber-700 to-red-800 text-white text-center py-6 shadow-md relative">
+        <h1 class="text-xs uppercase tracking-widest font-bold opacity-75">My Native</h1>
+        <h2 class="text-3xl md:text-5xl font-serif font-bold mt-1">Chidambaram</h2>
+        
+        <button id="themeToggle" class="absolute right-4 top-1/2 -translate-y-1/2 bg-white/20 hover:bg-white/30 text-white px-3 py-1.5 rounded-full text-sm font-medium transition-all cursor-pointer">
+            🌙 Dark Mode
+        </button>
+    </header>
+
+    <main class="max-w-4xl mx-auto px-4 py-8">
+        
+        <div class="overflow-hidden rounded-xl shadow-lg border-4 border-amber-600 bg-stone-900 group relative mb-8">
+            <img src="https://magikindia.com/wp-content/uploads/2026/08/chidambaram-1-971x1024.jpg" 
+                 alt="Chidambaram Nataraja Temple" 
+                 class="w-full h-auto max-h-[500px] object-cover transition-transform duration-500 group-hover:scale-105">
+            <div class="absolute bottom-0 inset-x-0 bg-gradient-to-t from-black/80 to-transparent p-4">
+                <p class="text-white text-sm italic font-serif">"Atmosphere of Wisdom" — Derived from Chit (Consciousness) & Ambaram (Sky/Space)</p>
+            </div>
+        </div>
+
+        <section class="mb-8 text-center max-w-2xl mx-auto">
+            <p class="text-lg leading-relaxed font-serif">
+                Chidambaram is a historic temple town located in the Cuddalore district of Tamil Nadu, India. 
+                The town grew in concentric circles around its spiritual center and is globally renowned for its deep cultural, architectural, and religious heritage.
+            </p>
+        </section>
+
+        <hr class="border-amber-200 dark:border-stone-800 my-8">
+
+        <section class="mb-12">
+            <h3 class="text-2xl font-serif font-bold text-amber-800 dark:text-amber-400 mb-4 text-center">Key Highlights</h3>
+            <p class="text-sm text-center text-stone-500 dark:text-stone-400 mb-6 italic">(Click on a highlight to reveal more details)</p>
+            
+            <div class="space-y-3">
+                <div class="border border-amber-200 dark:border-stone-800 rounded-lg overflow-hidden bg-white dark:bg-stone-900 shadow-sm">
+                    <button class="w-full text-left p-4 font-semibold flex justify-between items-center bg-amber-100/50 dark:bg-stone-900/50 hover:bg-amber-100 dark:hover:bg-stone-800 transition cursor-pointer accordion-btn">
+                        <span>🔥 Thillai Nataraja Temple</span>
+                        <span class="transform transition-transform text-amber-700 font-bold">+</span>
+                    </button>
+                    <div class="p-4 hidden text-sm bg-amber-50/30 dark:bg-stone-900/30 border-t border-amber-100 dark:border-stone-800 leading-relaxed">
+                        The spiritual heart of the town, dedicated to Lord Shiva as the cosmic dancer (Nataraja) performing the <em>Ananda Tandavam</em> (Dance of Bliss). Unlike most Shiva temples which feature a Lingam, here Lord Shiva is represented in his anthropomorphic form dancing.
+                    </div>
+                </div>
+
+                <div class="border border-amber-200 dark:border-stone-800 rounded-lg overflow-hidden bg-white dark:bg-stone-900 shadow-sm">
+                    <button class="w-full text-left p-4 font-semibold flex justify-between items-center bg-amber-100/50 dark:bg-stone-900/50 hover:bg-amber-100 dark:hover:bg-stone-800 transition cursor-pointer accordion-btn">
+                        <span>🔥 The Element of Sky</span>
+                        <span class="transform transition-transform text-amber-700 font-bold">+</span>
+                    </button>
+                    <div class="p-4 hidden text-sm bg-amber-50/30 dark:bg-stone-900/30 border-t border-amber-100 dark:border-stone-800 leading-relaxed">
+                        It is one of the five holiest Shiva temples (Pancha Bhoota Sthalams), uniquely representing the element of <strong>Akasha (Ether/Space)</strong>. The famous "Chidambaram Rahasyam" (secret) lies here, symbolizing that God is formless and omnipresent like space.
+                    </div>
+                </div>
+
+                <div class="border border-amber-200 dark:border-stone-800 rounded-lg overflow-hidden bg-white dark:bg-stone-900 shadow-sm">
+                    <button class="w-full text-left p-4 font-semibold flex justify-between items-center bg-amber-100/50 dark:bg-stone-900/50 hover:bg-amber-100 dark:hover:bg-stone-800 transition cursor-pointer accordion-btn">
+                        <span>🔥 Rich History</span>
+                        <span class="transform transition-transform text-amber-700 font-bold">+</span>
+                    </button>
+                    <div class="p-4 hidden text-sm bg-amber-50/30 dark:bg-stone-900/30 border-t border-amber-100 dark:border-stone-800 leading-relaxed">
+                        Historically an ancient capital, Chidambaram flourished immensely under the royal patronage of great south Indian dynasties including the Pallavas, Cholas, Pandyas, and the Vijayanagara Kings, who added magnificent gold-roofed structures to the sanctum.
+                    </div>
+                </div>
+
+                <div class="border border-amber-200 dark:border-stone-800 rounded-lg overflow-hidden bg-white dark:bg-stone-900 shadow-sm">
+                    <button class="w-full text-left p-4 font-semibold flex justify-between items-center bg-amber-100/50 dark:bg-stone-900/50 hover:bg-amber-100 dark:hover:bg-stone-800 transition cursor-pointer accordion-btn">
+                        <span>🔥 Art & Culture</span>
+                        <span class="transform transition-transform text-amber-700 font-bold">+</span>
+                    </button>
+                    <div class="p-4 hidden text-sm bg-amber-50/30 dark:bg-stone-900/30 border-t border-amber-100 dark:border-stone-800 leading-relaxed">
+                        Famous for hosting the annual Natyanjali Dance Festival during Maha Shivaratri. Classical dancers from all across the globe converge here to pay their artistic tribute to Lord Nataraja, the ultimate lord of dance.
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="bg-gradient-to-br from-amber-800 to-red-900 text-white rounded-xl p-6 md:p-8 shadow-inner text-center">
+            <h3 class="text-xl font-serif font-bold mb-6 tracking-wide text-amber-200">Details of Chidambaram</h3>
+            
+            <div class="grid grid-cols-2 md:grid-cols-4 gap-6">
+                <div>
+                    <p class="text-3xl md:text-4xl font-mono font-bold text-amber-300 counter" data-target="62153">0</p>
+                    <p class="text-xs uppercase tracking-wider font-semibold opacity-75 mt-1">Population</p>
+                </div>
+                <div>
+                    <p class="text-3xl md:text-4xl font-mono font-bold text-amber-300">11.3993° N</p>
+                    <p class="text-xs uppercase tracking-wider font-semibold opacity-75 mt-1">Latitude</p>
+                </div>
+                <div>
+                    <p class="text-3xl md:text-4xl font-mono font-bold text-amber-300">79.6936° E</p>
+                    <p class="text-xs uppercase tracking-wider font-semibold opacity-75 mt-1">Longitude</p>
+                </div>
+                <div>
+                    <p class="text-3xl md:text-4xl font-mono font-bold text-amber-300 counter" data-target="11">0</p>
+                    <p class="text-xs uppercase tracking-wider font-semibold opacity-75 mt-1">Area (Sq. Km)</p>
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <script>
+        // 1. Dark Mode Toggle Logic
+        const themeToggle = document.getElementById('themeToggle');
+        themeToggle.addEventListener('click', () => {
+            document.documentElement.classList.toggle('dark');
+            if (document.documentElement.classList.contains('dark')) {
+                themeToggle.innerHTML = '☀️ Light Mode';
+            } else {
+                themeToggle.innerHTML = '🌙 Dark Mode';
+            }
+        });
+
+        // 2. Accordion Dropdown Logic for Highlights
+        const accordionButtons = document.querySelectorAll('.accordion-btn');
+        accordionButtons.forEach(button => {
+            button.addEventListener('click', () => {
+                const content = button.nextElementSibling;
+                const icon = button.querySelector('span:last-child');
+                
+                // Toggle current visibility
+                content.classList.toggle('hidden');
+                
+                // Toggle icon indicator
+                if (content.classList.contains('hidden')) {
+                    icon.textContent = '+';
+                    icon.style.transform = 'rotate(0deg)';
+                } else {
+                    icon.textContent = '−';
+                    icon.style.transform = 'rotate(180deg)';
+                }
+            });
+        });
+
+        // 3. Counter Animation Logic
+        const counters = document.querySelectorAll('.counter');
+        counters.forEach(counter => {
+            const updateCount = () => {
+                const target = +counter.getAttribute('data-target');
+                const count = +counter.innerText.replace(/,/g, '');
+                
+                // Adjust speed based on value size
+                const speed = target > 1000 ? 150 : 30; 
+                const increment = Math.ceil(target / speed);
+
+                if (count < target) {
+                    const currentVal = count + increment;
+                    counter.innerText = (currentVal >= target ? target : currentVal).toLocaleString();
+                    setTimeout(updateCount, 15);
+                } else {
+                    counter.innerText = target.toLocaleString();
+                }
+            };
+            updateCount();
+        });
+    </script>
+</body>
+</html>
